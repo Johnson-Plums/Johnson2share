@@ -1,0 +1,12 @@
+C:\Users\622834\Desktop\TravelExperts003 test\TravelExpertData\bin\Debug\TravelExpertData.dll
+C:\Users\622834\Desktop\TravelExperts003 test\TravelExpertData\bin\Debug\TravelExpertData.pdb
+C:\Users\622834\Desktop\TravelExperts003 test\TravelExpertData\obj\Debug\TravelExpertDB.csprojResolveAssemblyReference.cache
+C:\Users\622834\Desktop\TravelExperts003 test\TravelExpertData\obj\Debug\TravelExpertDB.csproj.CoreCompileInputs.cache
+C:\Users\622834\Desktop\TravelExperts003 test\TravelExpertData\obj\Debug\TravelExpertData.dll
+C:\Users\622834\Desktop\TravelExperts003 test\TravelExpertData\obj\Debug\TravelExpertData.pdb
+C:\Users\622834\Desktop\TravelExperts004\TravelExpertData\bin\Debug\TravelExpertData.dll
+C:\Users\622834\Desktop\TravelExperts004\TravelExpertData\bin\Debug\TravelExpertData.pdb
+C:\Users\622834\Desktop\TravelExperts004\TravelExpertData\obj\Debug\TravelExpertDB.csprojResolveAssemblyReference.cache
+C:\Users\622834\Desktop\TravelExperts004\TravelExpertData\obj\Debug\TravelExpertDB.csproj.CoreCompileInputs.cache
+C:\Users\622834\Desktop\TravelExperts004\TravelExpertData\obj\Debug\TravelExpertData.dll
+C:\Users\622834\Desktop\TravelExperts004\TravelExpertData\obj\Debug\TravelExpertData.pdb

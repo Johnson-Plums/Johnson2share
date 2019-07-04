@@ -1,0 +1,224 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="travelWebsite.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styling/bootstrap.min.css" rel="stylesheet" />
+    <script src="styling/jquery.min.js"></script>
+    <script src="styling/popper.min.js"></script>
+    <script src="styling/bootstrap.min.js"></script>
+    <link href="styling/SiteMaster.css" rel="stylesheet" />
+    <style>
+        .bodyStyle {
+            position: relative;
+            width: 100%;
+            background-color: deepskyblue;
+        }
+        .footerStyle {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: deepskyblue;
+        }
+        .bannerImage { 
+            background-image: url("images/header2.jpg"); 
+            background-repeat: no-repeat;
+            background-size: cover;  
+            background-position: center center;
+            color: bisque;
+            background-color: deepskyblue;
+        }
+        #pictureItem1 {
+            background-image: url("images/travel package.jpg"); 
+        }
+        #pictureItem2 {
+            background-image: url("images/flight.jpg"); 
+            /*filter: grayscale(100%);*/
+        }
+        #pictureItem3 {
+            background-image: url("images/car rental 3.jpg"); 
+            /*filter: grayscale(100%);*/
+        }
+        #pictureItem4 {
+            background-image: url("images/hotel2.jpg"); 
+            /*filter: grayscale(100%);*/
+        }
+         #pictureItem5 {
+            background-image: url("images/travel package2.jpg"); 
+            /*filter: grayscale(100%);*/
+        }
+        .itemTile {
+            background-color: deepskyblue;
+            background-repeat: no-repeat;
+            background-size: cover;  
+            background-position: center center;
+            float:left;
+            width: 310px;
+            height: 250px;
+        }
+        menu
+        {
+             background-color: deepskyblue;
+        }
+        main
+        {
+             background-color: deepskyblue;
+        }
+        body {
+              background-color: deepskyblue;
+            }
+        header{
+            background-color: deepskyblue;
+        }
+        footer
+        {
+            background-color: deepskyblue;
+        }
+        nav
+        {
+             background-color: deepskyblue;
+        }
+
+        .auto-style2 {
+            color: #CC33FF;
+            background-color: #FFFFFF;
+            text-align: left;
+        }
+
+        .auto-style3 {
+            color: #FFFFFF;
+            text-align: right;
+        }
+
+        .auto-style4 {
+            font-size: medium;
+        }
+
+        .auto-style5 {
+            display: block;
+            color: #FFFFFF;
+        }
+
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <title>MasterPage</title>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" class="form-horizontal" runat="server">
+        <div class="jumbotron-fluid">
+            
+            <header>
+                <!--Header Section section-->
+                <nav class="navbar navbar-expand-lg sticky-top bannerImage">
+                    <a class="navbar-brand"><h3 class="auto-style2"><strong>PLEASANT TRAVEL AGENCY INC.</strong></h3>
+                    </a>
+                </nav>
+                <nav class="navbar navbar-expand-lg navbar-blue bg-blue sticky-top">
+                    <a class="navbar-brand"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent,#navbarSupportedContent2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse w-100 order-1 order-md-0" id="navbarSupportedContent" background-color: deepskyblue; >
+                        <ul class="navbar-nav mr-auto" background-color: deepskyblue;>
+                            <li class="nav-item" style="font-size: medium"><a class="auto-style5" href="Index.aspx"> <strong>Main Page</strong></a></li>
+                            <li class="nav-item" style="font-size: medium"><a class="nav-link" data-toggle="collapse" data-target="#bookOptions"> <strong>Book Packages                  
+                            </strong> </li>                 
+                            <li class="nav-item"><a class="auto-style5" href="AboutUs.aspx"> <span class="auto-style4"><strong>About Us </strong> </span> </a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-collapse collapse w-100 order-3" id="navbarSupportedContent2" background-color: deepskyblue;>
+                        <div class="dropdown ml-auto" background-color: deepskyblue;>
+                            <ul class="navbar-nav ml-auto" background-color: deepskyblue;>
+                                <li class="nav-item dropdown" background-color: deepskyblue;>
+                                    <a class="nav-link dropdown-toggle" id="accountBtn" runat="server" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <strong>
+                                        <asp:Label ID="accountLabel" runat="server" Text="ACCOUNT" CssClass="text-white"></asp:Label>
+                                    </strong>
+                                    </a>
+                                    <div id="acctDropDown" runat="server" class="dropdown-menu dropdown-menu-right" aria-labelledby="accountBtn">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="navbar-expand-lg navbar-blue bg-blue sticky-top menuItems" background-color: deepskyblue;> <!--navbar-expand-lg navbar-dark bg-dark sticky-top menuItems-->
+                    <div class="collapse w-100 order-1 order-md-0 scrolling-wrapper" id="bookOptions">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a href="Packages.aspx">
+                                <div id="pictureItem1" class="nav-link itemTile card" style="left: 28px; top: 0px">
+                                    TRAVEL PACKAGES
+                                </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FlightSearch.aspx">
+                                <div id="pictureItem2" class="nav-link itemTile card" style="left: 0px; top: 0px">
+                                   BOOK YOUR FLIGHTS
+                                </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">
+                                <div id="pictureItem3" class="nav-link itemTile card" style="left: 0px; top: 0px">
+                                    VEHICLE RENTAL
+                                </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">
+                                <div id="pictureItem4" class="nav-link itemTile card" style="left: 0px; top: 0px">
+                                    BOOK HOTLE ROOMS
+                                </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">
+                                <div id="pictureItem5" class="nav-link itemTile card" style="left: 0px; top: 0px; ">
+                                    Travel Tips
+
+                                </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <main>
+                <!--Mainbody section section-->
+                <asp:ContentPlaceHolder ID="BodyPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+            
+
+            <footer>
+                <!--Footer section-->
+                <nav class="text-right">
+                <div class="navbar w-100 order-1 order-md-0">
+                     <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                           <a class="nav-link">
+                            </a>
+                        </a></li>
+                         <li class="nav-item">
+                             <a class="nav-link">
+                             <p class="auto-style3">PLEASANT TRAVEL EXPERTS <asp:Label ID="lblYear" runat="server"></asp:Label> &copy; BY JOHNSON PLUMS</p>
+                        </a></li>
+                     </ul>
+                </div>
+                <a class="navbar-left"><asp:ImageButton runat="server" ImageUrl="~/images/facebook.png" Height="60px" Width="60px" />
+                    <asp:ImageButton runat="server" ImageUrl="~/images/twitter.png" Height="60px" Width="60px" /></a>
+                <%--<a class="navbar-left"><asp:ImageButton runat="server" CssClass="miniImages" ImageUrl="~/images/linkedin.png" /></a>--%>
+                </nav>
+            </footer>
+
+        </div>
+    </form>
+</body>
+</html>

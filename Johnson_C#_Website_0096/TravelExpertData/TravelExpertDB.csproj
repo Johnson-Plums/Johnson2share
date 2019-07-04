@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C0D58758-AB52-4E4B-AB0D-07D586A9A5F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TravelExpertData</RootNamespace>
+    <AssemblyName>TravelExpertData</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class_Library\Agencies.cs" />
+    <Compile Include="Class_Library\Agents.cs" />
+    <Compile Include="Class_Library\Booking.cs" />
+    <Compile Include="Class_Library\BookingDetails.cs" />
+    <Compile Include="Class_Library\Classes.cs" />
+    <Compile Include="Class_Library\Customer.cs" />
+    <Compile Include="Class_Library\FlightsTable.cs" />
+    <Compile Include="Class_Library\Package.cs" />
+    <Compile Include="Class_Library\Products.cs" />
+    <Compile Include="Class_Library\Products_Suppliers.cs" />
+    <Compile Include="Class_Library\SearchParameters.cs" />
+    <Compile Include="Class_Library\Supplier.cs" />
+    <Compile Include="Class_Library\SupplierContact.cs" />
+    <Compile Include="Class_Library\TripTypes.cs" />
+    <Compile Include="DB\AgenciesDB.cs" />
+    <Compile Include="DB\AgentsDB.cs" />
+    <Compile Include="DB\BookingsDB.cs" />
+    <Compile Include="DB\BookingDetailsDB.cs" />
+    <Compile Include="DB\ClassesDB.cs" />
+    <Compile Include="DB\CustomersDB.cs" />
+    <Compile Include="DB\FlightsDB.cs" />
+    <Compile Include="DB\PackagesDB.cs" />
+    <Compile Include="DB\ProductsDB.cs" />
+    <Compile Include="DB\Products_SuppliersDB.cs" />
+    <Compile Include="DB\SupplierContactsDB.cs" />
+    <Compile Include="DB\SuppliersDB.cs" />
+    <Compile Include="DB\TripTypesDB.cs" />
+    <Compile Include="DB\DBConnections.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
