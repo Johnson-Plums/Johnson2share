@@ -9,17 +9,12 @@ using TravelExpertData.datadefinitions;
 
 namespace TravelExpertData.DBactions
 {
-    /// <summary>
-
-    /// 
-    /// FlightsTableDB contains all of the sql statements responsible for data manipulation for the FlightsTableDB table
-    /// </summary>
+    //Author: Josh, Wei, Johnson
+    //Time: May 23, 2019
+    //FlightsTableDB contains all of the sql statements responsible for data manipulation for the FlightsTableDB table
     public class FlightsTableDB
     {
-        /// <summary>
-
-        /// Method responsible for getting Flights from the Flights table
-        /// </summary>
+        // Method responsible for getting Flights from the Flights table
         public static List<FlightsTable> getFlights()
         {
             List<FlightsTable> flightLists = new List<FlightsTable>();
@@ -28,7 +23,6 @@ namespace TravelExpertData.DBactions
             string selectStatement = "SELECT FlightId, FltPlaneNo, FltDepart, FltReturn, FltLocation, FltDestination, RegionId, FltTicketPrice " +
                                      "FROM FlightsTable";
             SqlCommand selectCommand = new SqlCommand(selectStatement, connection);
-
             try
             {
                 connection.Open();
@@ -57,10 +51,7 @@ namespace TravelExpertData.DBactions
             }
             return flightLists;
         }
-        /// <summary>
-    
-        /// Method responsible for getting Flights according to the depart and return plane Id
-        /// </summary>
+        // Method responsible for getting Flights according to the depart and return plane Id
         public static List<FlightsTable> getFlightsById(int DepartPlnId, int ReturnPlnId)
         {
             List<FlightsTable> flightLists = new List<FlightsTable>();
@@ -124,23 +115,7 @@ namespace TravelExpertData.DBactions
             }
             return flightLists;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /// <summary>
-        /// Author: Neil
-        /// Method responsible for getting Flights according to the search parameters (note: still in early stages not functional)
-        /// </summary>
+       // Method responsible for getting Flights according to the search parameters (note: still in early stages not functional)
         public static List<ResultFlightsTable> SearchFlights(SearchParameters sp)
         {
             List<ResultFlightsTable> flightLists = new List<ResultFlightsTable>();

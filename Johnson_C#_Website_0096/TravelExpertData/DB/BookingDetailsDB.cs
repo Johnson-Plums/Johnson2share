@@ -9,19 +9,14 @@ using TravelExpertData.datadefinitions;
 
 namespace TravelExpertData.DBactions
 {
-    /// <summary>
-
-    /// 
-    /// BookingDetailDB contains all of the sql statements responsible for data manipulation for the BookingDetailDB table
-    /// </summary>
+    //Author: Josh, Wei, Johnson
+    //Time: May 23, 2019
+    // BookingDetailDB contains all of the sql statements 
+    //responsible for data manipulation for the BookingDetailDB table
     public class BookingDetailsDB
     {
         string BookingNo = ""; private static Random random = new Random();
-
-        /// <summary>
-      
-        /// Method responsible for getting BookingDetails accrording to the passed booking Id
-        /// </summary>
+        // Method responsible for getting BookingDetails accrording to the passed booking Id
         public static BookingDetails GetBookingDetailByID(int BookingId)
         {
             BookingDetails bookingDetails = null;
@@ -68,16 +63,12 @@ namespace TravelExpertData.DBactions
             return bookingDetails;
         }
         
-        /// <summary>
-     
-        /// Method responsible for creating BookingDetails accrording to the passed bookingId and class
-        /// </summary>
+     // Method responsible for creating BookingDetails accrording to the passed bookingId and class
         public static void CreateBookingDetailPckg(Booking newBooking, string Class)
         {
             List<Package> selectedPckg = PackageDB.GetPackagesById((int)newBooking.PackageId);
             List<FlightsTable> inclFlights = FlightsTableDB.getFlightsById(selectedPckg[0].DepartureFlight, selectedPckg[0].ReturnFlight);
             List<Products_Suppliers> usedProds = Products_SuppliersDB.GetProductsSuppliersIdFromPackageId((int)newBooking.PackageId);
-
             SqlConnection con = UnversalDBControls.GetConnection();
             string insertStatement = "ALTER TABLE BookingDetails " +
                                      "NOCHECK CONSTRAINT FK_BookingDetails_Bookings; " +
@@ -107,7 +98,6 @@ namespace TravelExpertData.DBactions
             cmd.Parameters.AddWithValue("@ProductSupplierId", usedProds[0].ProductSupplierId);
             cmd.Parameters.AddWithValue("@DeparturePlnId", inclFlights[0].FlightId);
             cmd.Parameters.AddWithValue("@ReturnPlnId", inclFlights[1].FlightId);
-
             try
             {
                 con.Open();
@@ -122,12 +112,8 @@ namespace TravelExpertData.DBactions
                 con.Close();
             }
         }
-
-        /// <summary>
-       
-        /// This method will return a random string
-        /// The ItineraryNo is highly dependent on this (Subject to change if proper formatting is presented)
-        /// </summary>
+        // This method will return a random string
+        // The ItineraryNo is highly dependent on this (Subject to change if proper formatting is presented)
         public static string RandomString(int length)
         {
             const string chars = "0123456789";

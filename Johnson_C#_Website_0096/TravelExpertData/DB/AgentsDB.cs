@@ -8,18 +8,16 @@ using TravelExpertData.datadefinitions;
 
 namespace TravelExpertData.DBactions
 {
-
-    /// 
-    /// AgentsDB contains all of the sql statements responsible for data manipulation for the Agents table
-    /// </summary>
+    //Author: Josh, Wei, Johnson
+    //Time: May 23, 2019
+    // AgentsDB contains all of the sql statements 
+    //responsible for data manipulation for the Agents table
     public static class AgentsDB
     {
-   
-        /// Method responsible for getting Agents in the Agents table according to the passed Agency Id
-        /// </summary>
+        // Method responsible for getting Agents in the Agents table 
+        //according to the passed Agency Id
         public static List<Agents> GetAgents(int AgencyId)
         {
-            
             List<Agents> agenstlist = new List<Agents>();
             Agents agents;
             SqlConnection connection = UnversalDBControls.GetConnection();

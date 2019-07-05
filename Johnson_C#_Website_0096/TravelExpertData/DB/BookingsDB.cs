@@ -9,17 +9,12 @@ using TravelExpertData.datadefinitions;
 
 namespace TravelExpertData.DBactions
 {
-    /// <summary>
-
-    /// 
-    /// BookingDB contains all of the sql statements responsible for data manipulation for the Booking table
-    /// </summary>
+    //Author: Josh, Wei, Johnson
+    //Time: May 23, 2019
+    // BookingDB contains all of the sql statements responsible for data manipulation for the Booking table
     public class BookingDB
     {
-        /// <summary>
-  
-        /// Method responsible for getting Bookings accrording to the passed customer Id (can be from the sessionId or cookieID)
-        /// </summary>
+        // Method responsible for getting Bookings accrording to the passed customer Id (can be from the sessionId or cookieID)
         public static List<Booking> GetBookingByID(int? CookedCustId, int? SessedCustId)
         {
             int? CustomerId = -1;
@@ -61,10 +56,7 @@ namespace TravelExpertData.DBactions
             }
             return bookingList;
         }
-        /// <summary>
-
-        /// Method responsible for creating a booking ticket and also returns necessary information for BookingDetails creation
-        /// </summary>
+        // Method responsible for creating a booking ticket and also returns necessary information for BookingDetails creation
         public static Booking CreateBookingPckg(Booking book, string Class)
         {
             SqlConnection con = UnversalDBControls.GetConnection();

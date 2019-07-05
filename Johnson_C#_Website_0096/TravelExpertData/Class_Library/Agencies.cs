@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace TravelExpertData.datadefinitions
 {
-    /// <summary>
-    /// Author: Neil
-    /// Created: July 21, 2018
-    /// 
-    /// Agency data definitions
-    /// Responsible for storing Information about the Agency
-    /// </summary>
+    //Author: Josh, Wei, Johnson
+    //Time: May 23, 2019
+    // data definitions
+    // storing Information 
+ 
     public class Agencies
     {
         public string AgncyAddress { get; set; }

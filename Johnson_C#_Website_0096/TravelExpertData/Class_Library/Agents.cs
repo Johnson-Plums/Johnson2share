@@ -4,13 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/// <summary>
-/// Author: Neil
-/// Date Created:  July 21, 2018
-/// 
-/// Agents data definitions
-/// Responsible for storing Information about the Agents
-/// </summary>
+//Author: Josh, Wei, Johnson
+//Time: May 23, 2019
+// Agents data definitions
+// Responsible for storing Information
+
 namespace TravelExpertData.datadefinitions
 {
     public class Agents

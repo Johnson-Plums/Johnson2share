@@ -6,8 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace TravelExpertData
-{
-   public static class SupplierDB
+{//Author: Josh, Wei, Johnson
+ //Time: May 23, 2019
+    public static class SupplierDB
     {
         public static List<Supplier> GetSuppliers()
         {
@@ -16,8 +17,6 @@ namespace TravelExpertData
             SqlConnection connection = UnversalDBControls.GetConnection();
             string selectstatement = "SELECT * FROM [Suppliers]";
             SqlCommand selectCommand = new SqlCommand(selectstatement, connection);
-           
-            
             try
             {
                 connection.Open();
@@ -39,7 +38,6 @@ namespace TravelExpertData
                 connection.Close();
             }
             return suppliers;
-
         }
         public static int AddSupplier(Supplier nextSuplier)
         {
@@ -112,6 +110,5 @@ namespace TravelExpertData
                 con.Close();
             }
         }
-
     }
 }

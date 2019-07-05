@@ -1,0 +1,4 @@
+C:\Users\622834\Desktop\Pleasant Travel Agency Website - Copy 002\PleasantExperts\obj\Debug\Agent_Admin_APP.csprojResolveAssemblyReference.cache
+C:\Users\622834\Desktop\Pleasant Travel Agency Website - Copy 002\PleasantExperts\obj\Debug\Agent_Admin_APP.csproj.CoreCompileInputs.cache
+C:\Users\622834\Desktop\Pleasant Travel Agency Website - Copy 002\PleasantExperts\obj\Debug\travelExperts_Phase2.exe
+C:\Users\622834\Desktop\Pleasant Travel Agency Website - Copy 002\PleasantExperts\obj\Debug\travelExperts_Phase2.pdb

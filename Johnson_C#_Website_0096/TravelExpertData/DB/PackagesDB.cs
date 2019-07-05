@@ -7,13 +7,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace TravelExpertData
-{
+{//Author: Josh, Wei, Johnson
+ //Time: May 23, 2019
     public class PackageDB
     {
         public static List<Package> GetPackages()
         {
-            List<Package> packages = new List<Package>();// empty list
-            Package pack; // for reading
+            List<Package> packages = new List<Package>();
+            Package pack; 
             SqlConnection connection = UnversalDBControls.GetConnection();
             string selectStatement = "SELECT PackageId, PkgName, PkgStartDate, PkgEndDate, PkgDesc, PkgBasePrice, PkgAgencyCommission,DeparturePlnId, ReturnPlnId " +
                                      "FROM Packages ORDER BY PackageId";
@@ -81,7 +82,6 @@ namespace TravelExpertData
                 con.Close();
             }
         }
-
         public static bool UpdatePackage(Package oldPack, Package newPack)
         {
             SqlConnection con = UnversalDBControls.GetConnection();
@@ -176,8 +176,8 @@ namespace TravelExpertData
         }
         public static List<Package> GetPackagesById(int PackageId)
         {
-            List<Package> packages = new List<Package>();// empty list
-            Package pack; // for reading
+            List<Package> packages = new List<Package>();
+            Package pack;
             SqlConnection connection = UnversalDBControls.GetConnection();
             string selectStatement = "SELECT PackageId, PkgName, PkgStartDate, PkgEndDate, PkgDesc, PkgBasePrice, PkgAgencyCommission,DeparturePlnId, ReturnPlnId " +
                                      "FROM Packages " +

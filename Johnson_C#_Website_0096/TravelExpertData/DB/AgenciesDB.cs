@@ -8,16 +8,14 @@ using TravelExpertData.datadefinitions;
 
 namespace TravelExpertData.DBactions
 {
-    /// <summary>
-  
-    /// 
-    /// AgenciesDB contains all of the sql statements responsible for data manipulation for the Agencies table
-    /// </summary>
+    //Author: Josh, Wei, Johnson
+    //Time: May 23, 2019
+    // AgenciesDB contains all of the sql statements 
+    //responsible for data manipulation for the Agencies table
+   
     public class AgenciesDB
     {
- 
-        /// Method responsible for getting all of the Agencies in the database
-        /// </summary>
+        // Method responsible for getting all of the Agencies 
         public static List<Agencies> getAgencies()
         {
             List<Agencies> agenciesList = new List<Agencies>();

@@ -10,7 +10,8 @@ using System.Windows.Forms;
 using TravelExpertData.datadefinitions;
 
 namespace TravelExpertData.DBactions
-{
+{//Author: Josh, Wei, Johnson
+ //Time: May 23, 2019
     public class CustomerDB
     {
         public static int AddCustomer(Customer cust)
@@ -49,11 +50,7 @@ namespace TravelExpertData.DBactions
                 con.Close();
             }
         }
-
-        /// <summary>
-
-        /// Method responsible for authenticating the login using the login data sent by the Login.aspx
-        /// </summary>
+        // Method responsible for authenticating the login using the login data sent by the Login.aspx
         public static int? AuthenticateLogin(Login sentLogin)
         {
             SqlConnection con = UnversalDBControls.GetConnection();
@@ -89,11 +86,7 @@ namespace TravelExpertData.DBactions
             }
         }
 
-
-        /// <summary>
-
-        /// Method responsible getting the name of the current logged in customer (according to the custId passed)
-        /// </summary>
+        // Method responsible getting the name of the current logged in customer (according to the custId passed)
         public static string GetCustName(int custId)
         {
             SqlConnection con = UnversalDBControls.GetConnection();
@@ -126,7 +119,8 @@ namespace TravelExpertData.DBactions
                 con.Close();
             }
         }
-        // delete this later only for testing purposes
+        // can delete this later 
+        // currently only for testing purposes
         public static List<Customer> DummyCustomer()
         {
             List<Customer> custList = new List<Customer>();

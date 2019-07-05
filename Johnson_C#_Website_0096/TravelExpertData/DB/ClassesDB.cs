@@ -8,17 +8,12 @@ using TravelExpertData.datadefinitions;
 
 namespace TravelExpertData.DBactions
 {
-    /// <summary>
-
-    /// 
-    /// ClassesDB contains all of the sql statements responsible for data manipulation for the ClassesDB table
-    /// </summary>
+    //Author: Josh, Wei, Johnson
+    //Time: May 23, 2019
+    // ClassesDB contains all of the sql statements responsible for data manipulation for the ClassesDB table
     public class ClassesDB
     {
-        /// <summary>
-
-        /// Method responsible for getting Classes from the Classes table
-        /// </summary>
+        // Method responsible for getting Classes from the Classes table
         public static List<Classes> GetClasses()
         {
             List<Classes> classesList = new List<Classes>();// empty list
@@ -27,7 +22,6 @@ namespace TravelExpertData.DBactions
             string selectStatement = "SELECT ClassId, ClassName " +
                                      "FROM Classes ";
             SqlCommand selectCommand = new SqlCommand(selectStatement, connection);
-
             try
             {
                 connection.Open();

@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace TravelExpertData
-{
+{//Author: Josh, Wei, Johnson
+ //Time: May 23, 2019
     public class SupplierContact
     {
         public int SupplierContactId { get; set; }

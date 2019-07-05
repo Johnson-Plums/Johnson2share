@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace TravelExpertData
 {
-
+    //Author: Josh, Wei, Johnson
+    //Time: May 23, 2019
     public static class ProductDB
     {
         public static List<Products> GetProductNames()

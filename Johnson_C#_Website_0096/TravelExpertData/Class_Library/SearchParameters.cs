@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace TravelExpertData.datadefinitions
 {
-    /// <summary>
-    /// Author: Neil
-    /// Created: July 31, 2018
-    /// 
-    /// SearchParameters definitions
-    /// Responsible for storing Information about the SearchParameters passed by the flightsearch page
-    /// </summary>
+    //Author: Josh, Wei, Johnson
+    //Time: May 23, 2019
+    // SearchParameters definitions
+    // Responsible for storing Information about the SearchParameters passed by the flightsearch page
+ 
     public class SearchParameters
     {
         public string Location { get; set; }

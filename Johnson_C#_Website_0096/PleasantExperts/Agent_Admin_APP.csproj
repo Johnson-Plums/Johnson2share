@@ -62,55 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UpdateProductSuppliers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UpdateProductSuppliers.Designer.cs">
-      <DependentUpon>UpdateProductSuppliers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UpdateSuppliers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UpdateSuppliers.Designer.cs">
-      <DependentUpon>UpdateSuppliers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UpdateProducts.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UpdateProducts.Designer.cs">
-      <DependentUpon>UpdateProducts.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ManagementForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ManagementForm.Designer.cs">
-      <DependentUpon>ManagementForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="scripts\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="scripts\Validator.cs" />
-    <Compile Include="UpdatePackage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UpdatePackage.Designer.cs">
-      <DependentUpon>UpdatePackage.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Properties\DataSources\TravelExpertData.datadefinitions.Customer.datasource" />
-    <None Include="Properties\DataSources\TravelExpertData.DBactions.CustomerDB.datasource" />
-    <None Include="Properties\DataSources\TravelExpertData.Package.datasource" />
-    <None Include="Properties\DataSources\TravelExpertData.PackageDB.datasource" />
-    <None Include="Properties\DataSources\TravelExpertData.ProductDB.datasource" />
-    <None Include="Properties\DataSources\TravelExpertData.Products.datasource" />
-    <None Include="Properties\DataSources\TravelExpertData.Products_Suppliers.datasource" />
-    <None Include="Properties\DataSources\TravelExpertData.Products_SuppliersDB.datasource" />
-    <None Include="Properties\DataSources\TravelExpertData.Supplier.datasource" />
-    <None Include="Properties\DataSources\TravelExpertData.SupplierContact.datasource" />
-    <None Include="Properties\DataSources\TravelExpertData.SupplierContactDB.datasource" />
-    <None Include="Properties\DataSources\TravelExpertData.SupplierDB.datasource" />
-    <None Include="Properties\DataSources\TravelExpertData.UnversalDBControls.datasource" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="forms\" />
@@ -121,23 +78,6 @@
       <Project>{c0d58758-ab52-4e4b-ab0d-07d586a9a5f8}</Project>
       <Name>TravelExpertDB</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="ManagementForm.resx">
-      <DependentUpon>ManagementForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UpdatePackage.resx">
-      <DependentUpon>UpdatePackage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UpdateProducts.resx">
-      <DependentUpon>UpdateProducts.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UpdateProductSuppliers.resx">
-      <DependentUpon>UpdateProductSuppliers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UpdateSuppliers.resx">
-      <DependentUpon>UpdateSuppliers.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">

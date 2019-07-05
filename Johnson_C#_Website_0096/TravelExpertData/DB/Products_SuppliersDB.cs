@@ -8,10 +8,10 @@ using System.Windows.Forms;
 
 namespace TravelExpertData
 {
-
+    //Author: Josh, Wei, Johnson
+    //Time: May 23, 2019
     public class Products_SuppliersDB
     {
-
         public static List<Products_Suppliers> GetProductsSuppliers()
         {
             List<Products_Suppliers> products_supplier = new List<Products_Suppliers>();
@@ -45,7 +45,6 @@ namespace TravelExpertData
             }
             return products_supplier;
         }
-
 
         public static List<Products_Suppliers> GetProductsSuppliersIdFromPackageId(int PackageId)
         {
@@ -101,7 +100,7 @@ namespace TravelExpertData
             }
             catch (SqlException ex)
             {
-                throw ex; //IDENTITY_INSERT is left on.. i dont know but it says i need to turn it off
+                throw ex; 
             }
             finally
             {

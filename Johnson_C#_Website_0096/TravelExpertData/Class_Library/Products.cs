@@ -6,23 +6,19 @@ using System.Threading.Tasks;
 
 namespace TravelExpertData
 {
-    /// <summary>
-    /// Author: Neil
-    /// Created: July 14, 2018
-    /// 
-    /// Products definitions
-    /// Responsible for storing Information about the Products
-    /// </summary>
+    //Author: Josh, Wei, Johnson
+    //Time: May 23, 2019
+    // Products definitions
+   // Responsible for storing Information about the Products
+   
     public class Products
     {
         public int ProductId { get; set; }
         public string ProdName { get; set; }
 
-        /// <summary>
-        /// Author: Jonah
-        /// 
-        /// Creates a copy of the current Products
-        /// </summary>
+     
+        // Creates a copy of the current Products
+   
         public Products CopyProduct()
         {
             Products copy = new Products();

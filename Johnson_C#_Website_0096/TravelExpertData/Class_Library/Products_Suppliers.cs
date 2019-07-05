@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace TravelExpertData
 {
-    /// <summary>
-    /// Author: Neil
-    /// Created: July 14, 2018
-    /// 
-    /// Products_Suppliers definitions
-    /// Responsible for storing Information about the Products_Suppliers
-    /// </summary>
+    //Author: Josh, Wei, Johnson
+    //Time: May 23, 2019
+    // Products_Suppliers definitions
+    // Responsible for storing Information about the Products_Suppliers
+    
     public class Products_Suppliers
     {
         public int ProductSupplierId { get; set; }
@@ -21,11 +19,9 @@ namespace TravelExpertData
         public string ProductName { get; set; }
         public string SupplierName { get; set; }
 
-        /// <summary>
-        /// Author: Jonah
-        /// 
-        /// Creates a full name out of ProductName and SupplierName
-        /// </summary>
+   
+        // Creates a full name out of ProductName and SupplierName
+      
         public string FullName
         {
             get
@@ -33,11 +29,9 @@ namespace TravelExpertData
                 return ProductName + "| | |" + SupplierName;
             }
         }
-        /// <summary>
-        /// Author: Jonah
-        /// 
-        /// Creates a copy of the current Products_Suppliers
-        /// </summary>
+    
+        // Creates a copy of the current Products_Suppliers
+       
         public Products_Suppliers CopyCombo()
         {
             Products_Suppliers copy = new Products_Suppliers();

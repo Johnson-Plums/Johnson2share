@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agent_Admin_APP", "Pleasant
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelExpertDB", "TravelExpertData\TravelExpertDB.csproj", "{C0D58758-AB52-4E4B-AB0D-07D586A9A5F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pleasant_Agency_Website", "travelWebsite\Pleasant_Agency_Website.csproj", "{FA6DDC31-CBEB-44C5-A3F2-607372741606}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pleasant_Agency_Website", "Website\Pleasant_Agency_Website.csproj", "{FA6DDC31-CBEB-44C5-A3F2-607372741606}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -6,7 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace TravelExpertData
-{
+{//Author: Josh, Wei, Johnson
+ //Time: May 23, 2019
     public static class SupplierContactDB
     {   
         public static List<SupplierContact> GetSupplierContact(int SupplierContactId)
@@ -140,6 +141,7 @@ namespace TravelExpertData
             cmd.Parameters.AddWithValue("@NewSupConEmail", newSup.SupConEmail);
             cmd.Parameters.AddWithValue("@NewSupConURL", newSup.SupConURL);
             cmd.Parameters.AddWithValue("@NewAffiliationId", newSup.AffiliationId);
+
             cmd.Parameters.AddWithValue("@OldSupplierId", oldSup.SupplierId);
             cmd.Parameters.AddWithValue("@OldSupConFirstName", oldSup.SupConFirstName);
             cmd.Parameters.AddWithValue("@OldSupConLastName", oldSup.SupConLastName);

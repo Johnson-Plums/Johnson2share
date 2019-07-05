@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 using TravelExpertData.datadefinitions;
 
 namespace TravelExpertData.DBactions
-{
+{//Author: Josh, Wei, Johnson
+ //Time: May 23, 2019
     public class TripTypesDB
     {
         public static List<TripTypes> GetTripTypes()
         {
-            List<TripTypes> tripTypeList = new List<TripTypes>();// empty list
-            TripTypes tripType; // for reading
+            List<TripTypes> tripTypeList = new List<TripTypes>();
+            TripTypes tripType; 
             SqlConnection connection = UnversalDBControls.GetConnection();
             string selectStatement = "SELECT TripTypeId, TTName " +
                                      "FROM TripTypes ";
             SqlCommand selectCommand = new SqlCommand(selectStatement, connection);
-
             try
             {
                 connection.Open();

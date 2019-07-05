@@ -10,3 +10,21 @@ C:\Users\622834\Desktop\TravelExperts004\TravelExpertData\obj\Debug\TravelExpert
 C:\Users\622834\Desktop\TravelExperts004\TravelExpertData\obj\Debug\TravelExpertDB.csproj.CoreCompileInputs.cache
 C:\Users\622834\Desktop\TravelExperts004\TravelExpertData\obj\Debug\TravelExpertData.dll
 C:\Users\622834\Desktop\TravelExperts004\TravelExpertData\obj\Debug\TravelExpertData.pdb
+C:\Users\622834\Desktop\Pleasant Travel Agency Website\TravelExpertData\bin\Debug\TravelExpertData.dll
+C:\Users\622834\Desktop\Pleasant Travel Agency Website\TravelExpertData\bin\Debug\TravelExpertData.pdb
+C:\Users\622834\Desktop\Pleasant Travel Agency Website\TravelExpertData\obj\Debug\TravelExpertDB.csprojResolveAssemblyReference.cache
+C:\Users\622834\Desktop\Pleasant Travel Agency Website\TravelExpertData\obj\Debug\TravelExpertDB.csproj.CoreCompileInputs.cache
+C:\Users\622834\Desktop\Pleasant Travel Agency Website\TravelExpertData\obj\Debug\TravelExpertData.dll
+C:\Users\622834\Desktop\Pleasant Travel Agency Website\TravelExpertData\obj\Debug\TravelExpertData.pdb
+C:\Users\622834\Desktop\Pleasant Travel Agency Website - Copy 002\TravelExpertData\bin\Debug\TravelExpertData.dll
+C:\Users\622834\Desktop\Pleasant Travel Agency Website - Copy 002\TravelExpertData\bin\Debug\TravelExpertData.pdb
+C:\Users\622834\Desktop\Pleasant Travel Agency Website - Copy 002\TravelExpertData\obj\Debug\TravelExpertDB.csprojResolveAssemblyReference.cache
+C:\Users\622834\Desktop\Pleasant Travel Agency Website - Copy 002\TravelExpertData\obj\Debug\TravelExpertDB.csproj.CoreCompileInputs.cache
+C:\Users\622834\Desktop\Pleasant Travel Agency Website - Copy 002\TravelExpertData\obj\Debug\TravelExpertData.dll
+C:\Users\622834\Desktop\Pleasant Travel Agency Website - Copy 002\TravelExpertData\obj\Debug\TravelExpertData.pdb
+C:\Users\USER\Documents\GitHub\Johnson2share\Johnson_C#_Website_0096\TravelExpertData\bin\Debug\TravelExpertData.dll
+C:\Users\USER\Documents\GitHub\Johnson2share\Johnson_C#_Website_0096\TravelExpertData\bin\Debug\TravelExpertData.pdb
+C:\Users\USER\Documents\GitHub\Johnson2share\Johnson_C#_Website_0096\TravelExpertData\obj\Debug\TravelExpertDB.csprojAssemblyReference.cache
+C:\Users\USER\Documents\GitHub\Johnson2share\Johnson_C#_Website_0096\TravelExpertData\obj\Debug\TravelExpertDB.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub\Johnson2share\Johnson_C#_Website_0096\TravelExpertData\obj\Debug\TravelExpertData.dll
+C:\Users\USER\Documents\GitHub\Johnson2share\Johnson_C#_Website_0096\TravelExpertData\obj\Debug\TravelExpertData.pdb

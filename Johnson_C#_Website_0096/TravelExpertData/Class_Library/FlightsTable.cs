@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace TravelExpertData.datadefinitions
 {
-    /// <summary>
-    /// Author: Neil
-    /// Created: July 28, 2018
-    /// 
-    /// FlightsTable data definitions
-    /// Responsible for storing Information about the FlightsTable
-    /// </summary>
+    //Author: Josh, Wei, Johnson
+    //Time: May 23, 2019
+    // FlightsTable data definitions
+    // Responsible for storing Information about the FlightsTable
+
     public class FlightsTable
     {
         public int FlightId { get; set; }

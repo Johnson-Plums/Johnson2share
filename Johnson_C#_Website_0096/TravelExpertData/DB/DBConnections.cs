@@ -7,17 +7,17 @@ using System.Threading.Tasks;
 
 namespace TravelExpertData
 {
-    /// <summary>
+    //Author: Josh, Wei, Johnson
+    //Time: May 23, 2019
+    // DBControls responsible for distributing the SQL connection to different DB related classes.
+    // Created this so other cs files can easily reuse the GetConnection() string without creating the connection in class
+    //original sql:localhost\sqlexpress
 
-    /// 
-    /// UniversalDBControls responsible for distributing the SQL connection to different DB related classes.
-    /// Created this so other cs files can easily reuse the GetConnection() string without creating the connection in class
-    /// </summary>
     public static class UnversalDBControls
     {
         public static SqlConnection GetConnection()
         {
-            return new SqlConnection(@"Data Source = localhost\sqlexpress; Initial Catalog = TravelExperts004; Integrated Security = True");
+            return new SqlConnection(@"Data Source = DESKTOP-1C9HJS2; Initial Catalog = TravelExperts004; Integrated Security = True");
         }
     }
 }
